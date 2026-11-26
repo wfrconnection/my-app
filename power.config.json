@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "appId": null,
+  "appId": "953e2d22-fa73-497b-bf38-9b227939136a",
   "appDisplayName": "App From Scratch",
   "region": "prod",
   "appType": "CodeApp",
@@ -10,6 +10,29 @@
   "buildEntryPoint": "index.html",
   "localAppUrl": "http://localhost:3000",
   "logoPath": "Default",
-  "connectionReferences": {},
+  "connectionReferences": {
+    "080b0e01-9b34-4f33-bce1-49be69b42f75": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+      "displayName": "SharePoint",
+      "dataSources": [
+        "failedflows"
+      ],
+      "dataSets": {
+        "https://dsbintranet.sharepoint.com/sites/ITforretningslsningeriO365": {
+          "dataSources": {
+            "failedflows": {
+              "tableName": "0f02af7c-af49-4334-8e12-8fec265e3c86",
+              "tableNameOverride": {
+                "environmentVariableName": "skyteam_Failedflowsliste"
+              }
+            }
+          },
+          "datasetOverride": {
+            "environmentVariableName": "skyteam_FailedFlowsSite"
+          }
+        }
+      }
+    }
+  },
   "databaseReferences": {}
 }
